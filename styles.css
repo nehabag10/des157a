@@ -112,6 +112,7 @@ img {
         font-size: 13px;
         margin-top: 5%;
         transition: transform 0.3s ease, border 0.3s ease; 
+        list-style-type: none;
     }
 
 }
@@ -136,8 +137,12 @@ a {
     color:#393838;
 }
 
- a:hover, li:hover  {
+ li:hover  {
     transform: translateX(10px);
+    color:#0C8CE9;
+ }
+
+ a:hover {
     color:#0C8CE9;
  }
 
