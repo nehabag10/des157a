@@ -23,13 +23,13 @@ body {
 h1 {
     font-weight: 900;
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h2 {
     font-weight: 700;
     margin-top: 0;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 6%;
 }
 
@@ -105,11 +105,13 @@ img {
 
     ul {
         padding-left: 10%;
-        margin-top: 2%;
+        margin-top: 8%;
     }
 
     li {
         font-size: 13px;
+        margin-top: 5%;
+        transition: transform 0.3s ease, border 0.3s ease; 
     }
 
 }
@@ -128,6 +130,16 @@ footer {
         font-size: 15px;
     }
 }
+
+a {
+    text-decoration: none;
+    color:#393838;
+}
+
+ a:hover, li:hover  {
+    transform: translateX(10px);
+    color:#0C8CE9;
+ }
 
 
 @media screen and (min-width: 600px) {
@@ -172,10 +184,14 @@ footer {
     .one, .two, .three {
         margin: 1%;
         width: 20%;
-        height: 250px;
+        height: 300px;
 
         li {
             font-size: 16px;
+        }
+
+        ul {
+            margin-bottom: 10%;
         }
     }
 
@@ -235,5 +251,4 @@ footer {
         display: flex;
         justify-content: space-evenly;
     }
-
 }
