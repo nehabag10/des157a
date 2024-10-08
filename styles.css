@@ -1,0 +1,239 @@
+body {
+    background-color: black;
+    color:aliceblue;
+    margin: 5%;
+    font-family: 'Inter';
+}
+
+.banner {
+    background-image: url(images/bannerbg.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: contain;
+ }
+
+.redbox, .bluebox, .greenbox {
+    transition: transform 0.3s ease, border 0.3s ease; 
+}
+
+ .redbox:hover,  .bluebox:hover ,  .greenbox:hover  {
+    transform: translateY(-10px);
+ }
+
+h1 {
+    font-weight: 900;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 6%;
+}
+
+h3 {
+    font-size: 8px;
+    font-weight: 500;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin-bottom: 0%;
+
+}
+
+h4 {
+    font-size: 8px;
+    font-weight: 400;
+    padding-left: 2%;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+p {
+    font-size: 8px;
+    font-weight: 200;
+    display: none;
+}
+
+img {
+    width: 7%;
+    padding-bottom: 1%;
+}
+
+.selectoptions {
+    padding-left: 2%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.borderSep {
+    width: 100%;
+    padding-top: 7%;
+    position: relative;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+    }
+  }
+
+.section_titles, li {
+    font-weight: 400;
+}
+
+.one, .two, .three {
+    background: #D9D9D9;
+    color:#393838; 
+    padding: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+
+    h2 {
+        margin: 4%;
+        font-weight: 500;
+    }
+
+    ul {
+        padding-left: 10%;
+        margin-top: 2%;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+}
+
+.one, .two, .three {
+    border: 0px #393838 solid;
+}
+
+.one:hover, .two:hover, .three:hover {
+    border: 2px #0C8CE9 solid;
+}
+
+footer {
+    a{
+        color: aliceblue;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .banner {
+        background-image: url(images/banner_bg.png);
+        background-repeat: no-repeat;
+        background-color: black;
+        background-size: contain;
+        background-position: center;
+     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding-left: 8%;
+    }
+
+    h4 {
+        font-size: 18px;
+        padding-left: 8%;
+        margin-bottom: 0%;
+        padding-top: 0.5%;
+    }
+ 
+    .selectoptions {
+        padding-left: 2%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5%;
+        margin-left: -75%;
+
+        img {
+            width: 150%;
+        }
+    }
+
+    .one, .two, .three {
+        margin: 1%;
+        width: 20%;
+        height: 250px;
+
+        li {
+            font-size: 16px;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .one:hover, .two:hover, .three:hover {
+        border: 4px #0C8CE9 solid;
+    }
+
+    footer {
+        margin-top: 5%;
+    }
+
+    .borderSep {
+        width: 100%;
+        padding-top: 7%;
+        position: relative;
+        animation: bounce 2s infinite ease-in-out;
+      }
+    
+      @keyframes bounce {
+        0%, 100% {
+            left: 0px;
+        }
+        50% {
+            left: 10px;
+        }
+      }
+
+    .redbox, .bluebox, .greenbox {
+        transition: transform 0.3s ease, border 0.3s ease; 
+        margin-top: 10%;
+    }
+    
+     .redbox:hover,  .bluebox:hover ,  .greenbox:hover  {
+        transform: translateX(10px);
+     }
+
+    p {
+        display: flex;
+        padding-left: 0%;
+        font-size: 16px;
+        margin-bottom: 15%;
+    }
+
+    .colornames {
+        margin-left: -80%;
+    }
+
+    .allcolors {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
