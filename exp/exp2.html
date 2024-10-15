@@ -9,15 +9,26 @@
     <h1>Experiment 2</h1>
 
     <script>
+
+        //will take the color the user entered and change the background if it matches oe 
         const colors = ["red", "blue", "green", "yellow"];
         
-        var enterColor = prompt(`Please enter a color: ${colors}`)
-
-        if (colors.includes(enterColor.toLowerCase())) {
-            document.body.style.backgroundColor = enterColor;
-        } else {
-            alert("Not a valid color, try again!");
+        function getColor() {
+            let color = prompt(`Please pick a color: ${colors}`).toLowerCase();
+            if (colors.includes(color)) {
+                return color;
+            } else {
+                alert("Please try again!")
+                return getColor();
+            }
         }
+
+        function changePagecolor() {
+            let color = getColor();
+            document.body.style.backgroundColor = color;
+        }
+
+        changePagecolor();
     </script>
     
 </body>
