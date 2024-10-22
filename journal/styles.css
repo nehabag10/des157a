@@ -47,14 +47,13 @@ p {
     padding: 2%;
     padding-left: 4%;
     padding-right: 4%;
-    background-image: url(images/postit.png);
+    background-image: url(images/postitlong.png);
     background-repeat: no-repeat;
     line-height: 1.3em;
 }
 
 .para2 {
     padding-left:4%;
-    padding-right: 8%;
 }
 
 
