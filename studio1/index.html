@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital@0;1&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> 
+    <title>MadLib</title>
+</head>
+<body>
+    <header>
+        <h1>Sally's Baking Adventure</h1>
+    </header>   
+    
+    <main>
+
+        <!-- <img src="images/fire.png" alt="fire"> -->
+        <form>
+
+            <p>Sally had enough of her 
+            <label for="fname">Adjective</label>
+            <input type="text" name="fname" id="fname"  placeholder = "Adjective" required>
+             day. She wanted to turn it around and bake a 
+             <label for="fname">Noun</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Noun" required>
+             . She started by gathering all her ingredients from her 
+             <label for="fname">Adjective</label>
+             <input type="text" name="fname" id="fname" placeholder="Adjective" required>
+             pantry. She grabbed a 
+             <label for="fname">Noun</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Noun" required>
+             , 
+             <label for="fname">Number</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Number" required>
+             cups of 
+             <label for="fname">Noun</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Noun" required>
+             , and 
+             <label for="fname">Adjective</label>
+             <input type="text" name="fname" id="fname" placeholder="Adjective" required>
+             milk. Then, she went to her closet and 
+             <label for="fname">Verb</label>
+             <input type="text" name="fname" id="fname" placeholder="Verb" required>
+             a bowl and 
+             <label for="fname">Noun</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Noun" required>
+             to 
+             <label for="fname">Adverb</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Adverb" required>
+             finish the process. She 
+             <label for="fname">Past tense Verb</label>
+             <input type="text" name="fname" id="fname" placeholder="Verb" required>
+             all the ingredients but accidentally spilled some
+             <label for="fname">Noun</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Noun" required>
+             when using her mixer. Sally waited to hear the noise from the oven and 
+             <label for="fname">Adverb</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Adverb" required>
+             brought her 
+             <label for="fname">Noun</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Noun" required>
+             to the oven. She then set a timer for 
+             <label for="fname">Number</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Number" required>
+             minutes. She got a phone call from 
+             <label for="fname">Proper Noun</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Proper Noun" required>
+             and went away from the timer. Later, the timer range and she didn't hear it. Suddenly, smoke was all over and she was
+             <label for="fname">Feeling</label>
+             <input type="text" name="fname" id="fname"  placeholder = "Feeling" required>
+             . Unfortunately she messed up and needed to repeat the whole process again.
+            </p>
+           
+            <div class="container">
+                <input id="bubbleButton" type="submit" name="submit" id="send-form" value="Ready to Bake!">
+            </div>
+
+
+        </form>
+    </main>
+    
+    
+</body>
+
+<script>
+    const button = document.getElementById('bubbleButton');
+
+button.addEventListener('click', function() {
+    const bubble = document.createElement('div');
+    const bubble1 = document.createElement('div');
+    bubble.classList.add('bubble');
+    bubble1.classList.add('bubble1');
+    
+    document.body.appendChild(bubble);
+    document.body.appendChild(bubble1);
+
+});
+</script>
+</html>
