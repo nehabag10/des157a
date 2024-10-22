@@ -34,8 +34,8 @@ button {
 }
 
 .bubble {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 180px;
     background-color: rgba(117, 118, 118, 0.7);
     border-radius: 50%;
     position: absolute;
