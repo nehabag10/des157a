@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital@0;1&display=swap" rel="stylesheet">
     <script src="script.js" defer></script> 
     <title>MadLib</title>
@@ -12,9 +12,11 @@
 <body>
     <header>
         <h1>Sally's Baking Adventure</h1>
-        <img src="images/croissant.png" alt="food1">
-        <img src="images/bread.png" alt="food2">
-        <img src="images/donut.png" alt="food1">
+        <div class="imageheader">
+            <img src="images/croissant.png" alt="food1">
+            <img src="images/bread.png" alt="food2">
+            <img src="images/donut.png" alt="food1">
+        </div>
     </header>   
     
     <main>
@@ -22,98 +24,126 @@
         <!-- <img src="images/fire.png" alt="fire"> -->
         <form>
 
-            <p>Sally had enough of her 
+            <div class="order1">
+            <div class="order">
+                <label for="adj">Adjective</label>
+                <input type="text" name="adj" id="adj"  placeholder = "Adjective" required>
+            </div>
 
-            <label for="adj">Adjective</label>
-            <input type="text" name="adj" id="adj"  placeholder = "Adjective" required>
+            <div class="order">
+                <label for="noun1">Noun</label>
+                <input type="text" name="noun1" id="noun1"  placeholder = "Noun" required>
+             </div>
 
-             day. She wanted to turn it around and bake a 
+            </div>
 
-             <label for="noun1">Noun</label>
-             <input type="text" name="noun1" id="noun1"  placeholder = "Noun" required>
+            <div class="order1">
+            <div class="order">
+                <label for="adj2">Adjective</label>
+                <input type="text" name="adj2" id="adj2" placeholder="Adjective" required>
+            </div>
+            
+            <div class="order">
+                <label for="noun2">Noun</label>
+                <input type="text" name="noun2" id="noun2"  placeholder = "Noun" required>
+            </div>
+            </div>
 
-             . She started by gathering all her ingredients from her 
+            <div class="order1">
+             <div class="order">
+                <label for="num">Number</label>
+                <input type="text" name="num" id="num"  placeholder = "Number" required>
+            </div>
 
-             <label for="adj2">Adjective</label>
-             <input type="text" name="adj2" id="adj2" placeholder="Adjective" required>
+            <div class="order">
+                <label for="noun3">Noun</label>
+                <input type="text" name="noun3" id="noun3"  placeholder = "Noun" required>
+            </div>
+            </div>
 
-             pantry. She grabbed a 
+            <div class="order1">
+            <div class="order">
+                <label for="adj3">Adjective</label>
+                <input type="text" name="adj3" id="adj3" placeholder="Adjective" required>
+            </div>
 
-             <label for="noun2">Noun</label>
-             <input type="text" name="noun2" id="noun2"  placeholder = "Noun" required>
-             , 
+            <div class="order">
+                <label for="verb">Verb</label>
+                <input type="text" name="verb" id="verb" placeholder="Verb" required>
+            </div>  
+            </div>
 
-             <label for="num">Number</label>
-             <input type="text" name="num" id="num"  placeholder = "Number" required>
+            <div class="order1">
+            <div class="order">
+                 <label for="noun4">Noun</label>
+                 <input type="text" name="noun4" id="noun4"  placeholder = "Noun" required>
+            </div>
 
-             cups of 
 
-             <label for="noun3">Noun</label>
-             <input type="text" name="noun3" id="noun3"  placeholder = "Noun" required>
+            <div class="order">
+                <label for="adverb">Adverb</label>
+                <input type="text" name="adverb" id="adverb"  placeholder = "Adverb" required>
+            </div>
+            </div>
 
-             , and 
+            <div class="order1">
+            <div class="order">
+                <label for="ptv">Past tense Verb</label>
+                <input type="text" name="ptv" id="ptv" placeholder="Verb" required>
+            </div>
 
-             <label for="adj3">Adjective</label>
-             <input type="text" name="adj3" id="adj3" placeholder="Adjective" required>
+            <div class="order">
+                <label for="noun5">Noun</label>
+                <input type="text" name="noun5" id="noun5"  placeholder = "Noun" required>
+            </div>
+            </div>
 
-             milk. Then, she went to her closet and 
+            <div class="order1">
+            <div class="order">
+                <label for="adv1">Adverb</label>
+                <input type="text" name="adv1" id="adv1"  placeholder = "Adverb" required>
+            </div>
 
-             <label for="verb">Verb</label>
-             <input type="text" name="verb" id="verb" placeholder="Verb" required>
+            <div class="order">
+                <label for="noun6">Noun</label>
+                <input type="text" name="noun6" id="noun6"  placeholder = "Noun" required>
+            </div>
+            </div>
 
-             a bowl and 
-
-             <label for="noun4">Noun</label>
-             <input type="text" name="noun4" id="noun4"  placeholder = "Noun" required>
-
-             to 
-
-             <label for="adverb">Adverb</label>
-             <input type="text" name="adverb" id="adverb"  placeholder = "Adverb" required>
-
-             finish the process. She 
-
-             <label for="ptv">Past tense Verb</label>
-             <input type="text" name="ptv" id="ptv" placeholder="Verb" required>
-
-             all the ingredients but accidentally spilled some
-
-             <label for="noun5">Noun</label>
-             <input type="text" name="noun5" id="noun5"  placeholder = "Noun" required>
-
-             when using her mixer. Sally waited to hear the noise from the oven and 
-
-             <label for="adv1">Adverb</label>
-             <input type="text" name="adv1" id="adv1"  placeholder = "Adverb" required>
-
-             brought her 
-
-             <label for="noun6">Noun</label>
-             <input type="text" name="noun6" id="noun6"  placeholder = "Noun" required>
-
-             to the oven. She then set a timer for 
-
-             <label for="num1">Number</label>
-             <input type="text" name="num1" id="num1"  placeholder = "Number" required>
+            <div class="order1">
+            <div class="order">
+                <label for="num1">Number</label>
+                <input type="text" name="num1" id="num1"  placeholder = "Number" required>
+            </div>
              
-             minutes. She got a phone call from 
+            <div class="order">
+                 <label for="pnoun">Proper Noun</label>
+                 <input type="text" name="pnoun2" id="pnoun"  placeholder = "Proper Noun" required>
+            </div>
 
-             <label for="pnoun2">Proper Noun</label>
-             <input type="text" name="pnoun2" id="pnoun2"  placeholder = "Proper Noun" required>
+            <div class="order">
+                <label for="feeling">Feeling</label>
+                <input type="text" name="feeling" id="feeling"  placeholder = "Feeling" required>
+           </div>
+        </div>
 
-             and went away from the timer. Later, the timer range and she didn't hear it. Suddenly, smoke was all over and she was
-
-             <label for="feeling">Feeling</label>
-             <input type="text" name="feeling" id="feeling"  placeholder = "Feeling" required>
-             . Unfortunately she messed up and needed to repeat the whole process again.
-            </p>
-           
             <div class="container">
                 <input id="bubbleButton" type="submit" name="submit" value="Ready to Bake!">
             </div>
 
+            <img class="kitchenimg" src="images/kitchenbgphone.png" alt="kitchenphoto">
 
         </form>
+
+
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <article id="madlib"></article>
+                <button id="closeOverlay">Close</button>
+            </div>
+        </div>
+
+        
     </main>    
 </body>
 </html>
