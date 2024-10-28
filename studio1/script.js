@@ -1,5 +1,5 @@
 (function() {
-    "use strict"
+    "use strict";
     console.log("reading JS");
 
     const myform = document.querySelector("form");
@@ -7,6 +7,7 @@
 
     myform.addEventListener('submit', function(event) {
         event.preventDefault();
+        
         const noun1 = document.querySelector('#noun1').value;
         const noun2 = document.querySelector('#noun2').value;
         const adj = document.querySelector('#adj').value;
@@ -30,86 +31,66 @@
         if (adj === '') {
             myText = "please provide an adjective";
             document.querySelector('#adj').focus();
-        } 
-        else if (noun1 === '') {
+        } else if (noun1 === '') {
             myText = "please provide a noun";
             document.querySelector('#noun1').focus();
-        } 
-        else if (adj2 === '') {
+        } else if (adj2 === '') {
             myText = "please provide an adjective";
             document.querySelector('#adj2').focus();
-        }
-        else if (noun2 === '') {
+        } else if (noun2 === '') {
             myText = "please provide a second noun";
             document.querySelector('#noun2').focus();
-        }
-        else if (num === '') {
+        } else if (num === '') {
             myText = "please provide a number";
             document.querySelector('#num').focus();
-        } 
-        else if (noun3 === '') {
+        } else if (noun3 === '') {
             myText = "please provide a noun";
             document.querySelector('#noun3').focus();
-        }
-        else if (adj3 === '') {
+        } else if (adj3 === '') {
             myText = "please provide an adjective";
             document.querySelector('#adj3').focus();
-        }
-        else if (verb === '') {
+        } else if (verb === '') {
             myText = "please provide a verb";
             document.querySelector('#verb').focus();
-        }
-        else if (noun4 === '') {
+        } else if (noun4 === '') {
             myText = "please provide a noun";
             document.querySelector('#noun4').focus();
-        }
-        else if (adverb === '') {
+        } else if (adverb === '') {
             myText = "please provide an adverb";
             document.querySelector('#adverb').focus();
-        }
-        else if (ptv === '') {
+        } else if (ptv === '') {
             myText = "please provide a past tense verb";
             document.querySelector('#ptv').focus();
-        }
-        else if (noun5 === '') {
+        } else if (noun5 === '') {
             myText = "please provide a noun";
             document.querySelector('#noun5').focus();
-        }
-        else if (adv1 === '') {
+        } else if (adv1 === '') {
             myText = "please provide an adverb";
             document.querySelector('#adv1').focus();
-        }
-        else if (noun6 === '') {
+        } else if (noun6 === '') {
             myText = "please provide a noun";
             document.querySelector('#noun6').focus();
-        }
-        else if (num1 === '') {
+        } else if (num1 === '') {
             myText = "please provide a number";
             document.querySelector('#num1').focus();
-        }
-        else if (pnoun === '') {
+        } else if (pnoun === '') {
             myText = "please provide a proper noun";
             document.querySelector('#pnoun').focus();
-        }
-        else if (feeling === '') {
+        } else if (feeling === '') {
             myText = "please provide a feeling";
             document.querySelector('#feeling').focus();
         } else {
-            // document.querySelector('#noun1').value = '';
-            // document.querySelector('#noun2').value = '';     
-            // document.querySelector('#adj').value = '';  
-            // document.querySelector('#verb').value = '';
-            // document.querySelector('#feeling').value = '';
+            myText = `Sally had enough of her ${adj} day. She wanted to turn it around and bake a ${noun1}. She started by gathering all the ingredients from her ${adj2} pantry. She grabbed a ${noun2}, ${num} cups of ${noun3}, and ${adj3} milk. She went to her closet and ${ptv} a bowl and ${noun4} to ${adverb} finish the process. She ${verb} all the ingredients but accidentally spilled some ${noun5} when using her mixer. Sally waited to hear the noise from the oven and ${adv1} brought her ${noun6} to the oven. She then set a timer for ${num1} minutes. She got a phone call from ${pnoun} and went away from the timer. Later, the timer rang. She didn't hear it. Suddenly smoke was all over and she was ${feeling} that she had to repeat the process.`;
 
-            myText = `Sally had enough of her ${adj} day. She wanted to turn it around and bake a ${noun1}. She started by gathering all the ingredients from her ${adj2} pantry. She grabbed a ${noun2}, ${num} cups of ${noun3}, and ${adj3} milk. She went to her closet and ${ptv} a bowl and ${noun4} to ${adverb} finish the process. She ${verb} all the ingredients but accidentally spilled some ${noun5} when using her mixer. Sally waited to hear the noise from the oven and ${adv1} brought her ${noun6} to the oven. She then set a timer for ${num1} minutes. She got a phone call from ${pnoun} and went away from the timer. Later, the timer rang. She didn't hear it. Suddenly smoke was all over and she was ${feeling} that she had to repeat the process.`
+            madLib.innerHTML = myText;
+
+            myform.reset();
+
+            showOverlayWithBubbles();
         }
-
-        madLib.innerHTML = myText;
     });
 
-    const button = document.getElementById('bubbleButton');
-
-    button.addEventListener('click', function() {
+    function showOverlayWithBubbles() {
         document.getElementById("overlay").style.display = "flex";
 
         const bubble = document.createElement('div');
@@ -128,11 +109,9 @@
         document.body.appendChild(bubble2);
         document.body.appendChild(bubble3);
         document.body.appendChild(bubble4);
-    
-    });
+    }
 
     document.getElementById("closeOverlay").addEventListener("click", function() {
         document.getElementById("overlay").style.display = "none";
     });
 })();
-
