@@ -35,7 +35,7 @@ input {
     height: 30px;
     margin-right: 10%;
     padding-left: 5%;
-    border: 2px,solid, #F9F8F5;
+    border: 2px solid #F9F8F5;
     background-color: #fae7cf;
     font-family: 'Quicksand';
 }
@@ -80,7 +80,7 @@ button {
     border-radius: 20px;
     height: 30px;
     margin-right: 10%;
-    border: 2px,solid, #F9F8F5;
+    border: 2px solid #F9F8F5;
     background-color: #fae7cf;
     font-family: 'Quicksand';
 }
