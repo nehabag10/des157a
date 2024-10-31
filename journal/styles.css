@@ -81,5 +81,8 @@ time {
 .section1img , .section2img{
     display: flex;
     flex-direction: row;
+}
 
+figcaption {
+    padding-left: 10%;
 }
