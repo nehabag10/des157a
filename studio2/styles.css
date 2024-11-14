@@ -79,7 +79,6 @@ section {
 .picheading {
     display: flex;
     flex-direction: row;
-    align-items: top;
 }
 
 .emptystars {
