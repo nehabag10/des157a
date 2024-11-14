@@ -1,25 +1,72 @@
 (function(){
-    const myImages = ['page1.png', 'page2.png'];
-    const slide = document.querySelector("#myimage")
+    const container = document.getElementById('bookContainer');
+    const pages = document.querySelectorAll('.page');
+    let pageNo = 6;
 
-    let currentImage = 0;
+    let currentPage = -1;
+    const totalPages = pages.length;
 
-    document.querySelector("#next").addEventListener('click', nextPhoto);
-    document.querySelector("#prev").addEventListener('click', prevPhoto);
+    const nextButtons = document.getElementsByClassName('next');
+    for (let i = 0; i < nextButtons.length; i++) {
+        nextButtons[i].addEventListener('click', nextPage);
+    }
 
-    function nextPhoto(){
-            currentImage++;
-            if(currentImage > myImages.length-1){
-                currentImage = 0;
+    const prevButtons = document.getElementsByClassName('prev');
+    for (let i = 0; i < prevButtons.length; i++) {
+        prevButtons[i].addEventListener('click', prevPage);
+    }
+
+    function nextPage(event){
+        const thisPage = event.target.id;
+        if (currentPage < totalPages - 1) {
+            currentPage++;
+        } else {
+            currentPage = 0;
+        }
+        updatePages(thisPage);
+    }
+
+    function prevPage(){
+        if (currentPage > 0) {
+            currentPage--;
+        } else {
+            currentPage = totalPages - 1; 
+        }
+        updatePages();
+    }
+
+    function updatePages(thisPage) {
+        for (let i = 0; i < pages.length; i++) {
+            if (i === currentPage) {
+                pages[i].style.zIndex = 1;
+            } else {
+                pages[i].style.zIndex = 0;
             }
-            slide.src= `images/${myImages[currentImage]}`;
         }
 
-        function prevPhoto(){
-            currentImage--;
-            if(currentImage < 0){
-                currentImage = myImages.length-1;
-            }
-            slide.src= `images/${myImages[currentImage]}`;
+        const stars = document.querySelector(`.emptystars-${thisPage}`);
+
+        if (stars) {
+            stars.addEventListener("mouseover" , function(){
+                stars.src= `images/${thisPage}-stars.svg`;
+            });
         }
+
+        const state = document.querySelector(`.prestate-${thisPage}`);
+        if (state) {
+            state.addEventListener("mouseover" , function(){
+                state.src= `images/${thisPage}-state.svg`;
+                state.style.opacity = "100%";
+                state.style.width = "100%";
+            });
+
+            state.addEventListener("mouseleave", function(){
+                state.src = `images/${thisPage}.svg`;  
+                state.style.opacity = "60%";
+                state.style.width = "75%"; 
+            });
+        }
+        
+    }
 })();
+
