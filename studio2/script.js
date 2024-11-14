@@ -1,4 +1,8 @@
 (function(){
+
+    'use strict';
+    console.log("reading JS");
+    
     const container = document.getElementById('bookContainer');
     const pages = document.querySelectorAll('.page');
     let pageNo = 6;
