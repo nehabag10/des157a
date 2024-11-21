@@ -1,0 +1,46 @@
+body {
+    font-family: "Open Sans";
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    background: rgb(245, 236, 225);
+    background-image: url(images/bgfinalbrief.png);
+}
+
+.expertf {
+    display: flex;
+    flex-direction: row;
+}
+
+.expertfh {
+    margin-bottom: 0;
+}
+
+.para1 {
+    margin-right: 7%;
+}
+
+header {
+    background: #ebcca8;
+    border: #593F2D, 2px, solid;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #6b266c;
+    font-family: "Quicksand";
+}
+
+h2 {
+    font-family: "Quicksand";
+}
+
+
