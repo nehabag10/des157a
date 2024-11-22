@@ -22,23 +22,24 @@
     }; 
 
     startGame.addEventListener("click", function () {
+        //adding in the sound for the game state button//
         const startSound = document.querySelector("#start-sound");
         startSound.play();
     
         gameControl.innerHTML = `<h2>The game has started</h2>`;
         gameControl.innerHTML += '<button id="quit"> Wanna Quit? </button>';
     
+        //adding in the sound for the quit button in the gamne//
         document.querySelector("#quit").addEventListener("click", function () {
             const quitSound = document.querySelector("#wanna-quit-sound");
             quitSound.play();
     
-            // Wait for the quit sound to finish before reloading
             quitSound.addEventListener("ended", function () {
                 location.reload();
             });
         });
     
-        gameData.index = Math.round(Math.random()); // Randomly pick the first player
+        gameData.index = Math.round(Math.random()); 
         setUpTurn();
     });
     
@@ -61,7 +62,7 @@
 
         gameData.roll1= Math.floor(Math.random()*6)+1; //rounds number and gives number from 1-5 so add 1//
         gameData.roll2= Math.floor(Math.random()*6)+1; 
-        //if else statements//
+        //if else statements to place the woodstocks//
         game.innerHTML = `<p> Roll the dice for the ${gameData.players[gameData.index]}</p>`;
         if (gameData.players[gameData.index] === 'Spoopy') {
             spoopygame.innerHTML = `<img class="purpimages" src="${gameData.dice[gameData.roll1-1]}">
