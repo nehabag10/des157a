@@ -1,0 +1,79 @@
+body {
+    font-family: "Afacad";
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.imagesforgame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.house {
+    width: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.players {
+    /* width: 100%; */
+    width: 250px;
+}
+
+.gameinfo {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35pt;
+}
+
+.introinfo {
+    text-align: center;
+    font-size: 20pt;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+button {
+    font-family: "Afacad";
+    background-color: beige;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 12pt;
+}
+
+.spoopypurp .charliepurp{
+    display: flex;
+    flex-direction: row;
+}
+
+.spoopygame {
+    width: 100%;
+}
+
+.purpimages {
+    width: 150px;
+    /* width: 100%; */
+}
+
+.rollcommand {
+    margin-right: 5%;
+}
+
+.rollagain {
+    margin-bottom: 5%;
+}
+
+.gameplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

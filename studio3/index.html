@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Game On Project</title>
+</head>
+<body>
+
+    <h1>Game On!</h1>
+    <p class="introinfo">Will Spoopy or Charlie Crown win Woodstock and his friends? Play this game to find out!</p>
+
+    <h2>Spoopy and Charlie Crown's Approved Rules</h2>
+    <p>There are two players - Spoopy and Charlie Crown. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.
+
+    </p>
+
+    <div id="gamecontrol">
+        <h2>Start a Game</h2>
+        <button id="startgame">Let's Begin!</button>
+    </div>
+
+
+    <div id="score"></div>
+
+    <div class="gameinfo">
+        <div class="imagesforgame">
+            <div class="spoopypurp">
+                <div>
+                    <h3>Spoopy</h3>
+                    <img class="players" src="images/spoopy.svg" alt="sppopy pic">
+                </div>
+                
+            </div>
+            <div id="spoopygame" class="spoopygame"> 
+                <!-- <img src="images/1purp.svg"> -->
+            </div>
+
+            <img class="house" src="images/house.svg" alt="house image">
+
+            <div class="charliepurp">
+                <div>
+                    <h3>Charlie Crown</h3>
+                    <img class="players" src="images/charlicrown.svg" alt="charlicrown">
+                </div>
+               
+            </div>
+            <div id="charliegame"></div>
+        </div>
+
+
+        <div class="gameplay">
+            <div id="game"></div>
+            <div id="actions"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
