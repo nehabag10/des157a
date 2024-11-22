@@ -21,21 +21,27 @@
         gameEnd: 29
     }; 
 
-    startGame.addEventListener("click", function(){
+    startGame.addEventListener("click", function () {
+        const startSound = document.querySelector("#start-sound");
+        startSound.play();
+    
         gameControl.innerHTML = `<h2>The game has started</h2>`;
         gameControl.innerHTML += '<button id="quit"> Wanna Quit? </button>';
-        document.querySelector("#quit").addEventListener("click", function(){
-            location.reload();
-        });
-
-        gameData.index = Math.round(Math.random()); //randomly picking the first player//
     
-        // console.log("set up the turn");
-        // console.log(gameData.index);
-
+        document.querySelector("#quit").addEventListener("click", function () {
+            const quitSound = document.querySelector("#wanna-quit-sound");
+            quitSound.play();
+    
+            // Wait for the quit sound to finish before reloading
+            quitSound.addEventListener("ended", function () {
+                location.reload();
+            });
+        });
+    
+        gameData.index = Math.round(Math.random()); // Randomly pick the first player
         setUpTurn();
     });
-
+    
 
     function setUpTurn() {
         game.innerHTML = `<p class="rollcommand">Roll the dice for ${gameData.players[gameData.index]}</p>`;
