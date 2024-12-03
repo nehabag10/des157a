@@ -43,4 +43,18 @@ h2 {
     font-family: "Quicksand";
 }
 
+section{
+    align-items: center;
+}
 
+img {
+    width: 100%;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.imagesheader {
+    margin-bottom: 5px;
+}
