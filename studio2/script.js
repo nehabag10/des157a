@@ -70,7 +70,39 @@
                 state.style.width = "75%"; 
             });
         }
+
+         /*final script*/
+
+        // const statebutton = document.getElementById("statebutton");
+
+        // const newstate = document.querySelector(`.states-${thisPage}`)
+        //     if (newstate) {
+        //         statebutton.addEventListener('click', function(){
+        //             newstate.src= `images/${thisPage}-states.svg`;
+        //         });
+        //     }
+       
         
-    }
+        
+        // const getchangearea = document.getElementById("before");
+        // const newimagesstate = document.querySelector(`.before-${thisPage}`)
+        // getchangearea.addEventListener('mouseover' , function(){
+        //         newimagesstate.src= `images/${thisPage}-after.svg`;
+                
+        //     })
+        // getchangearea.addEventListener("mouseleave", function(){
+        //         newimagesstate.src = `images/${thisPage}-before.svg`;
+        //     });
+        
+        // const starbutton = document.getElementById("buttonstarschange");
+        // const stars = document.querySelector(`.emptystars-${thisPage}`);
+        // if (stars) {
+        //     starbutton.addEventListener("click" , function(){
+        //         stars.src= `images/${thisPage}-stars.svg`;
+        //     });
+        // }
+        
+        }
+        
 })();
 

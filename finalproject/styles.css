@@ -21,7 +21,6 @@ article {
 .foodpic {
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
-    /* margin-right: 5%; */
     margin-right: 3.5%;
 }
 
@@ -83,9 +82,7 @@ section {
 }
 
 .emptystars {
-    width: 50%;
     width: 35%;
-    padding-left: 10%;
 }
 
 .prev {
@@ -168,8 +165,6 @@ h4 {
     margin-left: 20%;  
 }
 
-/*new edits*/
-
 .camera {
     width: 15%;
     margin-bottom: 0px;
@@ -200,7 +195,6 @@ h4 {
 
 .clickbutton p {
     font-size: 12px;
-    /* padding-right: 10%; */
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -258,4 +252,18 @@ h4 {
     display: flex;
     flex-direction: row;
 }
+
+.states-pizza, .states-brunch {
+    width:35%;
+}
+
+.states-vpasta {
+    width: 20%;
+}
+
+.states-vpasta {
+    width: 15%;
+}
+
+
 
