@@ -20,6 +20,7 @@
         prevButtons[i].addEventListener('click', prevPage);
     }
 
+    //code enables forward movement//
     function nextPage(event){
         let thisPage = event.target.id;
         if (currentPage < totalPages - 1) {
@@ -32,6 +33,7 @@
         console.log(thisPage);
     }
 
+    //code enables backward movement//
     function prevPage(){
         if (currentPage > 0) {
             currentPage--;
@@ -41,6 +43,7 @@
         updatePages();
     }
 
+    //implements changes in each page according to page assignment//
     function updatePages(thisPage) {
         for (let i = 0; i < pages.length; i++) {
             if (i === currentPage) {
@@ -50,6 +53,7 @@
             }
         }
 
+        //code to implement state change when image is clicked//
         const statebuttons = document.querySelectorAll(".statebutton");
 
         const newstate = document.querySelector(`.states-${thisPage}`);
@@ -58,6 +62,7 @@
                 statebuttons.forEach((statebutton) => {
                     statebutton.addEventListener('click', function(){
                         newstate.src= `images/${thisPage}-states.svg`;
+                        //code implements changes in name of location//
                         if (thisPage === "ramen") {
                             addplace.innerHTML = "<p>to see where this meal is based: San Francisco, CA </p>"
                         }
@@ -78,7 +83,7 @@
                 });
             }   
         
-        
+        //hover changes for images about day background//
         const getchangeareas = document.querySelectorAll(".before");
         const newimagesstate = document.querySelector(`.before-${thisPage}`);
 
@@ -96,6 +101,7 @@
 
         });
         
+        //change in star rating when user clicks on image next to it//
         const starbuttons = document.querySelectorAll(".buttonstarschange");
         const stars = document.querySelector(`.emptystars-${thisPage}`);
         if (stars) {
